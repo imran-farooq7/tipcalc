@@ -1,0 +1,41 @@
+.peoplecontainer input {
+	width: 100%;
+	font-size: 2.4rem;
+	font-weight: 700;
+	background-image: url("../images/icon-person.svg");
+	background-repeat: no-repeat;
+	background-size: initial;
+	background-position: 5% center;
+	color: #00494d;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s ease;
+	position: relative;
+}
+.peoplecontainer input:focus,
+.peoplecontainer input:hover {
+	outline: 2px solid #26c0ab;
+}
+.peoplecontainer input::placeholder {
+	color: #7f9c9f;
+}
+.peoplecontainer .nopeopleerror {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.peoplecontainer input.error {
+	outline: 2px solid red;
+}
+.peoplecontainer .input-error {
+	color: red;
+	font-size: 1rem;
+	display: inline-block;
+}
+@media screen and (min-width: 767px) {
+	.peoplecontainer .input-error {
+		font-size: 1.8rem;
+	}
+}

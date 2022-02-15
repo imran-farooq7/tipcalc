@@ -1,0 +1,62 @@
+.container {
+	width: 100%;
+	background-color: #00494d;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.container p {
+	font-size: 1.4rem;
+	color: #7f9c9f;
+}
+.container .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .tip-amount p,
+.container .total-amount p {
+	color: #26c0ab;
+	font-size: 3rem;
+	font-weight: 700;
+}
+.container .btn-reset-form button[type="reset"] {
+	width: 100%;
+	cursor: pointer;
+	background-color: #26c0ab;
+	color: #00494d;
+	font-size: 1.8rem;
+	font-weight: 700;
+	font-family: "Space Mono", monospace;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 10px 0;
+	border: none;
+	transition: 0.2s ease;
+}
+.container .btn-reset-form button[type="reset"]:hover {
+	background-color: #c5e4e7;
+}
+.container .btn-reset-form.empty button[type="reset"] {
+	background-color: #26c0ab24;
+}
+@media screen and (min-width: 767px) {
+	.container {
+		flex-basis: 50%;
+		padding: 70px 40px 40px 40px;
+	}
+	.container .tip-amount p,
+	.container .total-amount p {
+		font-size: 4.3rem;
+	}
+	.container .btn-reset-form {
+		margin-top: auto;
+	}
+}

@@ -1,0 +1,106 @@
+.tipinput {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "five ten" "fifteen twenty-five" "fifty custom";
+	column-gap: 15px;
+	row-gap: 15px;
+	margin-top: 15px;
+}
+.tipinput input[type="radio"] {
+	display: none;
+}
+.tipinput input[type="radio"]:checked + label {
+	background-color: #26c0ab;
+	color: #00494d;
+}
+.tipinput input[type="radio"] + label {
+	display: block;
+	padding: 10px 25px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 2.5rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.2s ease;
+	background-color: #00494d;
+	color: #f4fafa;
+}
+.tipinput input[type="radio"] + label:hover {
+	background-color: #26c0ab;
+	color: #00494d;
+}
+.tipinput input[type="number"] {
+	display: none;
+	width: 150px;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #00494d;
+	padding: 9px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+.tipinput input[type="number"]:focus {
+	outline: 2px solid #26c0ab;
+}
+.tipinput input[type="number"] + label {
+	display: block;
+	padding: 10px 25px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 2.5rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.2s ease;
+	background-color: #f4fafa;
+	color: #5e7a7d;
+}
+.tipinput input[type="number"] + label:hover {
+	outline: 3px solid #26c0ab;
+	color: #26c0ab;
+}
+
+#five {
+	grid-area: five;
+}
+
+#ten {
+	grid-area: ten;
+}
+
+#fifteen {
+	grid-area: fifteen;
+}
+
+#twenty-five {
+	grid-area: twenty-five;
+}
+
+#fifty {
+	grid-area: fifty;
+}
+
+#custom {
+	grid-area: custom;
+}
+@media screen and (min-width: 767px) {
+	.tipinput {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "five ten fifteen" "twenty-five fifty custom";
+	}
+
+	.tipinput input[type="number"] {
+		display: none;
+		width: 150px;
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #00494d;
+		padding: 9px;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.2s ease;
+		width: 141px;
+	}
+}

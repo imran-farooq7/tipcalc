@@ -1,0 +1,22 @@
+.bill-container input {
+	width: 100%;
+	font-size: 2.4rem;
+	font-weight: 700;
+	background-image: url("../images/icon-dollar.svg");
+	background-repeat: no-repeat;
+	background-size: initial;
+	background-position: 5% center;
+	color: #00494d;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+.bill-container input:focus,
+.bill-container input:hover {
+	outline: 2px solid #26c0ab;
+}
+.bill-container input::placeholder {
+	color: #7f9c9f;
+}
